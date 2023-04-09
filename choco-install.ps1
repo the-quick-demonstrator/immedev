@@ -4,6 +4,6 @@ function chocoInstall {
     )
     
     Write-Host "$packageName is being installed..."
-    choco install $packageName -f -y
+    chocoInstall "$packageName -f -y
     Write-Host "$packageName has been installed!"
 }
