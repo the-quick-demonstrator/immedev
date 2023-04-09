@@ -2,8 +2,6 @@ function chocoInstall {
     param(
         [string]$packageName
     )
-            [string]$packageName
-    )
 
     $installedPackages = choco list -local-only | Select-String -Pattern $packageName
 
